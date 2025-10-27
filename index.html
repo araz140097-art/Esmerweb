@@ -1,152 +1,160 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Esmer Web Ajans | Profesyonel web tasarım ve geliştirme hizmetleri. Modern, hızlı ve etkileyici web çözümleriyle markanızı dijital dünyada öne çıkarın.">
-  <title>Esmer Web Ajans | Profesyonel Web Tasarım</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Esmer Web Ajans | Profesyonel web tasarım ve geliştirme hizmetleri">
+  <title>Esmer Web Ajans</title>
   <style>
+    /* GENEL AYARLAR */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family: "Poppins", Arial, sans-serif;
-      background-color: #f8f9fb;
-      color: #222;
+      background-color: #fff;
+      color: #333;
       line-height: 1.6;
     }
 
+    /* ÜST MENÜ */
     header {
-      background: linear-gradient(135deg, #111, #333);
+      background: #0e0e0e;
       color: #fff;
+      padding: 20px 0;
       text-align: center;
-      padding: 2rem 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     header h1 {
-      font-size: 2.3rem;
+      font-size: 28px;
       letter-spacing: 1px;
     }
 
-    header p {
-      font-size: 1rem;
-      margin-top: 0.5rem;
-      opacity: 0.9;
-    }
-
-    nav {
+    nav ul {
       display: flex;
       justify-content: center;
-      background: #222;
-      padding: 0.8rem 0;
-      gap: 2rem;
+      gap: 30px;
+      margin-top: 15px;
+      list-style: none;
     }
 
     nav a {
       color: #fff;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
       transition: color 0.3s ease;
     }
 
     nav a:hover {
-      color: #4da6ff;
+      color: #00bcd4;
     }
 
-    main {
+    /* BÖLÜMLER */
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
       text-align: center;
-      padding: 3rem 1rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    main h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
       color: #111;
     }
 
-    main p {
-      font-size: 1rem;
-      color: #333;
+    section p {
+      text-align: center;
+      font-size: 17px;
+      color: #555;
     }
 
-    section {
-      margin: 3rem 0;
+    /* İLETİŞİM */
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact-info a {
+      display: inline-block;
+      margin: 8px;
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #0096a3;
     }
 
     footer {
-      background: #111;
-      color: #fff;
+      background: #0e0e0e;
+      color: #ccc;
       text-align: center;
-      padding: 1.2rem;
-      font-size: 0.9rem;
+      padding: 15px 0;
+      font-size: 14px;
     }
 
-    footer a {
-      color: #4da6ff;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        gap: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
+
+  <!-- ÜST KISIM -->
   <header>
     <h1>Esmer Web Ajans</h1>
-    <p>Profesyonel Web Tasarım & Geliştirme Hizmetleri</p>
+    <nav>
+      <ul>
+        <li><a href="#anasayfa">Ana Sayfa</a></li>
+        <li><a href="#hakkimizda">Hakkımızda</a></li>
+        <li><a href="#hizmetler">Hizmetler</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#anasayfa">Ana Sayfa</a>
-    <a href="#hakkimizda">Hakkımızda</a>
-    <a href="#hizmetler">Hizmetler</a>
-    <a href="#iletisim">İletişim</a>
-  </nav>
+  <!-- ANA SAYFA -->
+  <section id="anasayfa">
+    <h2>Hoş Geldiniz</h2>
+    <p>Esmer Web Ajans olarak modern, hızlı ve etkileyici web çözümleri sunuyoruz. Markanızı dijital dünyada öne çıkarıyoruz.</p>
+  </section>
 
-  <main id="anasayfa">
-    <section>
-      <h2>Hoş Geldiniz!</h2>
-      <p>Esmer Web Ajans olarak işletmenize özel profesyonel web siteleri tasarlıyoruz. Modern, hızlı ve etkileyici web çözümleriyle dijital dünyada fark yaratın.</p>
-    </section>
+  <!-- HAKKIMIZDA -->
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>Profesyonel ekibimizle işletmelere özel web siteleri, SEO çalışmaları ve sosyal medya yönetimi hizmetleri sunuyoruz.</p>
+  </section>
 
-    <section id="hakkimizda">
-      <h2>Hakkımızda</h2>
-      <p>Esmer Web Ajans, dijital dünyada markanızı en iyi şekilde temsil edecek yaratıcı web çözümleri üretir. Amacımız; sade, etkili ve kullanıcı dostu sitelerle sizi bir adım öne taşımaktır.</p>
-      <p><strong>Kurucu:</strong> Yılmaz Tekin</p>
-    </section>
+  <!-- HİZMETLER -->
+  <section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <p>Web Tasarımı • SEO Optimizasyonu • Google Ads • Sosyal Medya Yönetimi • E-Ticaret Çözümleri</p>
+  </section>
 
-    <section id="hizmetler">
-      <h2>Hizmetler</h2>
-      <p>🔹 Web Tasarım<br>🔹 Web Geliştirme<br>🔹 SEO Optimizasyonu<br>🔹 Google Kaydı ve Site Yönetimi</p>
-    </section>
-
-    <section id="iletisim">
-      <h2>İletişim</h2>
-      <p>Bize ulaşın:</p>
-      <p>
-        📧 <a href="mailto:info@esmerwebajans.com.tr">info@esmerwebajans.com.tr</a><br>
-        📱 <a href="https://wa.me/905XXXXXXXXX" target="_blank">WhatsApp ile iletişim kur</a>
-      </p>
-    </section>
-  </main>
+  <!-- İLETİŞİM -->
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Bize ulaşın, projenizi birlikte hayata geçirelim!</p>
+    <div class="contact-info">
+      <a href="tel:05456193504">📞 0545 619 35 04</a><br>
+      <a href="https://www.instagram.com/esmerwebdesing" target="_blank">📸 Instagram: @esmerwebdesing</a>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Esmer Web Ajans | Tüm Hakları Saklıdır.</p>
-    <p>Hazırlayan: <strong>Yılmaz Tekin</strong></p>
+    © 2025 Esmer Web Ajans | Tüm Hakları Saklıdır.
   </footer>
+
 </body>
 </html>

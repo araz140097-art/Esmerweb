@@ -184,4 +184,27 @@
   </section>
 
   <section id="hakkimizda">
-    <h2>Hakk
+    <h2>Hakkımızda</h2>
+    <p>Esmer Web Ajans, dijital alanda işletmelere güçlü bir marka kimliği kazandırmak için profesyonel web tasarım, SEO ve pazarlama hizmetleri sunar.</p>
+  </section>
+
+  <section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <p>Web Tasarımı • SEO Optimizasyonu • Google Reklam Yönetimi • Sosyal Medya • E-Ticaret</p>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Projenizi hayata geçirmek için bizimle iletişime geçin.</p>
+    <div class="contact-info">
+      <a href="tel:05456193504">📞 0545 619 35 04</a><br>
+      <a href="https://www.instagram.com/esmerwebdesing" target="_blank">📸 Instagram: @esmerwebdesing</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Esmer Web Ajans | Tasarım örneği – Öğrenim amaçlı şablon.
+  </footer>
+
+</body>
+</html>

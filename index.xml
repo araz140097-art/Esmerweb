@@ -60,101 +60,35 @@
       color: #00bcd4;
     }
 
-    /* BÖLÜMLER */
-    section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: auto;
+    /* ANA SAYFA */
+    #anasayfa {
+      background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
+      color: #fff;
+      padding: 120px 20px;
+      text-align: center;
     }
 
-    section h2 {
-      font-size: 28px;
+    #anasayfa h2 {
+      font-size: 40px;
       margin-bottom: 20px;
-      text-align: center;
-      color: #111;
     }
 
-    section p {
-      text-align: center;
-      font-size: 17px;
-      color: #555;
-    }
-
-    /* İLETİŞİM */
-    .contact-info {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .contact-info a {
-      display: inline-block;
-      margin: 8px;
-      color: #00bcd4;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    .contact-info a:hover {
-      color: #0096a3;
-    }
-
-    footer {
-      background: #0e0e0e;
+    #anasayfa p {
+      font-size: 18px;
       color: #ccc;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 14px;
+      max-width: 700px;
+      margin: 0 auto 25px auto;
     }
 
-  </style>
-</head>
-<body>
+    .founder {
+      font-size: 16px;
+      color: #00bcd4;
+      margin-bottom: 35px;
+    }
 
-  <!-- ÜST KISIM -->
-  <header>
-    <h1>Esmer Web Ajans</h1>
-    <nav>
-      <ul>
-        <li><a href="#anasayfa">Ana Sayfa</a></li>
-        <li><a href="#hakkimizda">Hakkımızda</a></li>
-        <li><a href="#hizmetler">Hizmetler</a></li>
-        <li><a href="#iletisim">İletişim</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ANA SAYFA -->
-  <section id="anasayfa">
-    <h2>Hoş Geldiniz</h2>
-    <p>Esmer Web Ajans olarak modern, hızlı ve etkileyici web çözümleri sunuyoruz. Markanızı dijital dünyada öne çıkarıyoruz.</p>
-  </section>
-
-  <!-- HAKKIMIZDA -->
-  <section id="hakkimizda">
-    <h2>Hakkımızda</h2>
-    <p>Profesyonel ekibimizle işletmelere özel web siteleri, SEO çalışmaları ve sosyal medya yönetimi hizmetleri sunuyoruz.</p>
-  </section>
-
-  <!-- HİZMETLER -->
-  <section id="hizmetler">
-    <h2>Hizmetlerimiz</h2>
-    <p>Web Tasarımı • SEO Optimizasyonu • Google Ads • Sosyal Medya Yönetimi • E-Ticaret Çözümleri</p>
-  </section>
-
-  <!-- İLETİŞİM -->
-  <section id="iletisim">
-    <h2>İletişim</h2>
-    <p>Bize ulaşın, projenizi birlikte hayata geçirelim!</p>
-    <div class="contact-info">
-      <a href="tel:05456193504">📞 0545 619 35 04</a><br>
-      <a href="https://www.instagram.com/esmerwebdesing" target="_blank">📸 Instagram: @esmerwebdesing</a>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 Esmer Web Ajans | Tüm Hakları Saklıdır.
-  </footer>
-
-</body>
-</html>
+    .btn {
+      display: inline-block;
+      background: #00bcd4;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 30

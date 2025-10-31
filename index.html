@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Esmer Web Ajans | Profesyonel web tasarım, SEO ve dijital çözümler. Modern, hızlı ve güvenilir web hizmetleri.">
+  <title>Esmer Web Ajans | Profesyonel Web Tasarım</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #000;
+      border-bottom: 1px solid #222;
+    }
+
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #111;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    nav a:hover {
+      background-color: #222;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7em;
+      color: #ccc;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #ffc107, #ffb300);
+      color: #000;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 20px 10px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .contact {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .contact h2 {
+      margin-bottom: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      background: #222;
+      color: #fff;
+    }
+
+    form button {
+      margin-top: 10px;
+      padding: 12px 20px;
+      background-color: #ffc107;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #ffb300;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #bbb;
+      border-top: 1px solid #222;
+      margin-top: 40px;
+    }
+
+    /* WhatsApp butonu */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      cursor: pointer;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Esmer Web Ajans — Profesyonel, Hızlı, Güvenilir</h1>
+    <p>Küçük ve orta ölçekli işletmelere özel, modern tasarım, mobil öncelikli ve SEO dostu web çözümleri sunuyoruz. Her projemizle markanıza değer katıyoruz.</p>
+    <a href="#iletisim" class="btn">Teklif Al</a>
+  </div>
+
+  <div class="container" id="hakkimizda" style="display:none;">
+    <h2>Hakkımızda</h2>
+    <p>Esmer Web Ajans olarak amacımız, müşterilerimizin dijital dünyada güven yaratmasını sağlamaktır. Açık iletişim, zamanında teslim ve sürdürülebilir destek sunuyoruz.</p>
+    <p><strong>Kurucu:</strong> Yılmaz Tekin</p>
+  </div>
+
+  <div class="container contact" id="iletisim">
+    <h2>İletişim</h2>
+    <p>Teklif almak veya soru sormak için hemen ulaşın.</p>
+    <p><strong>Telefon:</strong> 0545 619 3504</p>
+    <p><strong>E-posta:</strong> esmerwebajans@gmail.com</p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/esmerwebajans" target="_blank" style="color:#ffc107;">@esmerwebajans</a></p>
+
+    <form action="mailto:esmerwebajans@gmail.com" method="post" enctype="text/plain">
+      <label>Adınız:</label>
+      <input type="text" name="ad" required>
+
+      <label>E-posta:</label>
+      <input type="email" name="email" required>
+
+      <label>Mesaj:</label>
+      <textarea name="mesaj" rows="4" placeholder="Ne ihtiyacınız var?" required></textarea>
+
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 Esmer Web Ajans · Kurucu: Yılmaz Tekin<br>
+    Hızlı, güvenilir ve modern web çözümleri
+  </footer>
+
+  <!-- WhatsApp Butonu -->
+  <a class="whatsapp" href="https://wa.me/905456193504?text=Merhaba%20web%20sitesi%20yaptırmak%20istiyorum%2C%20bilgi%20alabilir%20miyim%3F" target="_blank">💬</a>
+
+  <script
